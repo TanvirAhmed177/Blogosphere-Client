@@ -19,4 +19,3 @@ A React application build using react library that can be use for posting and re
 - #### Admin can post and delete blogs
 
 ##
-# Blogosphere-Client
