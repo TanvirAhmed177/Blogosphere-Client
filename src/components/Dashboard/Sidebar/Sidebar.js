@@ -35,27 +35,8 @@ function Sidebar() {
 
             <li>
               <Link
-                to="users"
-                class="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
-              >
-                <FontAwesomeIcon icon={faUsersCog} />
-                <span>Users</span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="postData"
-                class="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
-              >
-                <FontAwesomeIcon icon={faPlus} />
-                <span>Post Data</span>
-              </Link>
-            </li>
-
-            <li>
-              <Link
                 to="/addBlogs"
-                class="flex items-center space-x-2 py-2 pt-4 px-4 transition duration-200 text-white  hover:text-gray-300"
+                className="flex items-center space-x-2 py-2 pt-4 px-4 transition duration-200 text-white  hover:text-gray-300"
               >
                 <FontAwesomeIcon icon={faEdit} />
                 <span>Post blog</span>
@@ -64,17 +45,34 @@ function Sidebar() {
             <li>
               <Link
                 to="manageBlogs"
-                class="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
+                className="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
               >
                 <FontAwesomeIcon icon={faTasks} />
                 <span>Manage Blogs</span>
               </Link>
             </li>
-
+            <li>
+              <Link
+                to="users"
+                className="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
+              >
+                <FontAwesomeIcon icon={faUsersCog} />
+                <span>Users</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="postData"
+                className="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
+              >
+                <FontAwesomeIcon icon={faPlus} />
+                <span>Post Data</span>
+              </Link>
+            </li>
             <li>
               <Link
                 to="/"
-                class="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
+                className="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
               >
                 <FontAwesomeIcon icon={faHome} />
                 <span>Home</span>
