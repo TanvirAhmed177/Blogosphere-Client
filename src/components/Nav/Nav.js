@@ -19,7 +19,7 @@ function Nav({ handleLogOut }) {
       >
         <div className="flex flex-no-shrink items-center mr-6 py-3 pl-3 text-gray-400">
           <span className="font-semibold text-3xl tracking-tight">
-            Blogosphere<span classNameName="font-bold text-red-300">.</span>
+            Blogosphere<span className="font-bold text-red-300">.</span>
           </span>
         </div>
 

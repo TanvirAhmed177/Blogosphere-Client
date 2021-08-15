@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import Sidebar from "./Sidebar";
 import { useAlert } from "react-alert";
+import Sidebar from "./Sidebar/Sidebar";
 
 function Dashboard() {
   const alert = useAlert();

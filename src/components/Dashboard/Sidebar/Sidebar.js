@@ -5,6 +5,7 @@ import {
   faEdit,
   faHome,
   faTasks,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
@@ -24,11 +25,30 @@ function Sidebar() {
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
         </div>
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+        <nav className={sidebar ? "nav-menu" : "nav-menu active"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
             <li className="navbar-toggle">
               <Link to="#" className="menu-bars">
                 <AiIcons.AiOutlineClose />
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="users"
+                class="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
+              >
+                <FontAwesomeIcon icon={faUsersCog} />
+                <span>Users</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="postData"
+                class="flex items-center space-x-2 py-2 px-4 transition duration-200 text-white hover:text-gray-300"
+              >
+                <FontAwesomeIcon icon={faPlus} />
+                <span>Post Data</span>
               </Link>
             </li>
 
@@ -50,6 +70,7 @@ function Sidebar() {
                 <span>Manage Blogs</span>
               </Link>
             </li>
+
             <li>
               <Link
                 to="/"

@@ -16,6 +16,8 @@ import {
   Provider as AlertProvider,
 } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+import Users from "./components/Dashboard/Users/Users";
+import PostData from "./components/Dashboard/PostData/PostData";
 
 const options = {
   // you can also just use 'bottom center'
@@ -47,6 +49,12 @@ function App() {
             </Route>
             <Route path="/manageBlogs">
               <ManageBlogs></ManageBlogs>
+            </Route>
+            <Route path="/users">
+              <Users></Users>
+            </Route>
+            <Route path="/postData">
+              <PostData></PostData>
             </Route>
             <Route path="/login">
               <Login></Login>

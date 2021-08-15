@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Sidebar from "../Sidebar";
 import Delete from "../../../images/Group 33150.png";
 import { useAlert } from "react-alert";
+import Sidebar from "../Sidebar/Sidebar";
 
 function ManageBlogs() {
   const [blogs, setBlogs] = useState([]);
